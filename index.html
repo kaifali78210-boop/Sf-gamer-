@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SF Gamer — Cheat Codes</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0b0b12;color:#f8fafc;font-family:Arial,sans-serif}
+header{text-align:center;padding:22px 12px;background:linear-gradient(135deg,#17172a,#242044);border-bottom:1px solid #34344b}
+h1{margin:0;font-size:32px}header p{margin:8px 0 0;color:#c7c7d9}
+main{max-width:900px;margin:auto;padding:16px}
+.price{font-size:18px;text-align:center;margin:16px 0;color:#facc15;font-weight:bold}
+.pay{display:block;width:100%;padding:15px;border:0;border-radius:12px;background:#16a34a;color:white;font-size:18px;font-weight:bold}
+.note{font-size:13px;line-height:1.5;color:#f5d98a;background:#28210e;border:1px solid #57451b;padding:12px;border-radius:10px;margin:12px 0}
+.tabs{display:flex;gap:8px;margin:18px 0 12px;overflow-x:auto}
+.tabs button{flex:1;min-width:72px;padding:12px 8px;border:1px solid #45455c;border-radius:10px;background:#1a1a29;color:#fff}
+.tabs button.active{background:#facc15;color:#171717;border-color:#facc15;font-weight:bold}
+.panel{display:none}.panel.active{display:block}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{padding:16px 8px;text-align:center;background:#191925;border:1px solid #303044;border-radius:12px}
+.code{font-size:23px;font-weight:800;overflow-wrap:anywhere}.label{margin-top:6px;color:#a5a5bb;font-size:12px}
+footer{text-align:center;padding:24px;color:#77778e;font-size:12px}
+@media(min-width:600px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<header><h1>SF Gamer</h1><p>Indian Bike Driving 3D · Cheat Code Guide</p></header>
+<main>
+<div class="price">PDF access price: ₹299</div>
+<button class="pay" onclick="paymentDemo()">Pay ₹299 &amp; Unlock PDF</button>
+<div class="note"><b>ध्यान दें:</b> यह वेबसाइट अभी डेमो है। इस बटन से असली पेमेंट नहीं लिया जाता। पेमेंट के बाद PDF सुरक्षित रूप से खोलने के लिए Razorpay जैसे payment gateway, server-side verification और आपकी अंतिम PDF फ़ाइल जोड़नी होगी।</div>
+<nav class="tabs" aria-label="Code pages">
+<button class="active" onclick="showPage(1,this)">Page 1</button>
+<button onclick="showPage(2,this)">Page 2</button>
+<button onclick="showPage(3,this)">Page 3</button>
+<button onclick="showPage(4,this)">Page 4</button>
+</nav>
+</main>
+<footer>© SF Gamer</footer>
+<script>
+const pages = {
+1:["0606","4040","5643","6677","5599","4321","4322","4323","4324","4325","355","3333"],
+2:["6666","8012","5643","4040","7000","5000","1111","3333","1820","505","8888","0901"],
+3:["4323","0601","3434","300","4345","9191","8370","2222","8033","7777","786","789"],
+4:["X111","2189","3005","4324","500","965","H10","2000","0606","0701","5599","4321"]
+};
+function showPage(n,btn){
+ document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+ document.getElementById('p'+n).classList.add('active');
+ document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));
+ btn.classList.add('active');
+}
+function paymentDemo(){
+ alert('यह डेमो बटन है—अभी कोई पेमेंट नहीं होगा। असली ₹299 UPI पेमेंट और PDF unlock के लिए payment gateway setup करना होगा।');
+}
+</script>
+</body>
+</html>
