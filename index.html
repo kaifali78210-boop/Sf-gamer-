@@ -46,41 +46,7 @@ footer{text-align:center;padding:24px;color:#77778e;font-size:12px}
   </p>
 
 </div>
-<div style="text-align:center; padding:20px; margin:20px auto; max-width:400px; border:2px solid #ddd; border-radius:15px; font-family:Arial,sans-serif;">
 
-  <h2>पेमेंट करें – ₹299</h2>
-
-  <p>नीचे दिए गए QR कोड को स्कैन करके ₹299 का भुगतान करें।</p>
-
-  <img
-    src="https://i.ibb.co/RpKNSDpM/IMG-20261016-WA0003.jpg"
-    alt="Payment QR Code"
-    style="width:250px; max-width:100%; height:auto; border-radius:10px;"
-  >
-
-  <p>पेमेंट करने के बाद अपना नाम और ईमेल भरें।</p>
-
-  <p style="color:green; font-weight:bold;">
-    पेमेंट की पुष्टि होने के बाद PDF ईमेल से भेजी जाएगी।
-  </p>
-
-</d
-<div style="text-align:center; padding:20px; margin:20px auto; max-width:400px; border:2px solid #ddd; border-radius:15px; font-family:Arial,sans-serif;">
-
-  <h2>Pay ₹299</h2>
-
-  <p>नीचे दिए गए QR कोड को स्कैन करके ₹299 का भुगतान करें।</p>
-
-  <img
-    src="https://i.ibb.co/TBG1TgBn/qr-code.png"
-    alt="Payment QR Code"
-    style="width:250px; max-width:100%; height:auto; border-radius:10px;"
-  >
-
-  <p style="color:#555;">भुगतान करने के बाद अपना नाम और ईमेल भरें।</p>
-
-  <p style="font-weight:bold; color:green;">PDF भुगतान की पुष्टि के बाद ईमेल से भेजी जाएगी।</p>
-</div>
  <!-- Customer Details Form -->
 <section style="max-width:400px;margin:20px auto;padding:20px;border:1px solid #ddd;border-radius:12px;font-family:Arial,sans-serif;">
   <h2 style="text-align:center;">PDF खरीदें - ₹299</h2>
@@ -126,8 +92,6 @@ footer{text-align:center;padding:24px;color:#77778e;font-size:12px}
 </section>
 <div class="price">PDF access price: ₹299</div>
 <button class="pay" onclick="paymentDemo()">Pay ₹299 &amp; Unlock PDF</button>
-<div class="note"><b>ध्यान दें:</b> यह वेबसाइट अभी डेमो है। इस बटन से असली पेमेंट नहीं लिया जाता। पेमेंट के बाद PDF सुरक्षित रूप से खोलने के लिए Razorpay जैसे payment gateway, server-side verification और आपकी अंतिम PDF फ़ाइल जोड़नी होगी।</div>
-<nav class="tabs" aria-label="Code pages">
 <button class="active" onclick="showPage(1,this)">Page 1</button>vehicle_codes_page_2.pdf
 <button onclick="showPage(2,this)">Page 2</button>
 <button onclick="showPage(3,this)">Page 3</button>
@@ -148,9 +112,8 @@ function showPage(n,btn){
  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));
  btn.classList.add('active');
 }
-function paymentDemo(){
- alert('यह डेमो बटन है—अभी कोई पेमेंट नहीं होगा। असली ₹299 UPI पेमेंट और PDF unlock के लिए payment gateway setup करना होगा।');
-}
+function payment
+ 
 </script>
 </body>
 </html>
